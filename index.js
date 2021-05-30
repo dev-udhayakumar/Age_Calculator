@@ -1,15 +1,15 @@
-function GetSelectedTextValue() {
+function Calculation() {
     var input = document.getElementById("Date").value;  
     var userinput = new Date (input);
     let formatted_date1 = (userinput.getMonth() + 1) + "/" + userinput.getDate() + "/" + userinput.getFullYear();  
-    var bob = new Date(formatted_date1);
+    var DOB = new Date(formatted_date1);
 
     var current_datetime = new Date ()
     let formatted_date2 = (current_datetime.getMonth() + 1) + "/" + current_datetime.getDate() + "/" + current_datetime.getFullYear();
     var TD = new Date(formatted_date2);
 
-    var ONE_DAY = 1000 * 60 * 60 * 24;
-    var totalDays =Math.round(Math.abs(TD - bob) / ONE_DAY ); 
+    var oneday = 1000 * 60 * 60 * 24;
+    var totalDays =Math.round(Math.abs(TD - DOB) / oneday ); 
     console.log(totalDays)
 
     var Years = totalDays /  365.242;
