@@ -13,7 +13,6 @@ function Calculation() {
 
     var oneday = 1000 * 60 * 60 * 24;
     var totalDays =Math.round(Math.abs(TD - DOB) / oneday ); 
-    console.log(totalDays)
 
     var Years = totalDays /  365.242;
     var YearsInt = Math.floor(Years);
@@ -25,7 +24,14 @@ function Calculation() {
     var Days = (Months - MonthsInt) *365.242/12 + 1;
     var DaysInt = Math.floor(Days)
 
-   
+    function Next_birthday(){
+        
+        var Next_birthday =  ((YearsInt+1) * 365.242)-(totalDays);
+        var Next_birthdayInt = Math.floor(Next_birthday)
+        return Next_birthdayInt
+        
+    }
+
     document.getElementById('year').innerHTML =YearsInt + "  Years";  
     document.getElementById('Month').innerHTML =MonthsInt + "   Months";
     document.getElementById('days').innerHTML =DaysInt + "  Days"; 
@@ -35,6 +41,7 @@ function Calculation() {
     document.getElementById('Ans').style.display = "block"
     document.getElementById('Invalid').style.display = "none";
     document.getElementById('info').style.display = "none";
+    document.getElementById('NextBirth').innerHTML = Next_birthday();
 
 
     }
