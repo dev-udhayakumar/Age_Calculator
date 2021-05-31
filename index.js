@@ -24,6 +24,10 @@ function Calculation() {
     var Days = (Months - MonthsInt) *365.242/12 + 1;
     var DaysInt = Math.floor(Days)
 
+    var TotalHours = totalDays * 24;
+    var TotalMins = TotalHours * 60;
+
+
     function Next_birthday(){
         
         var Next_birthday =  ((YearsInt+1) * 365.242)-(totalDays);
@@ -35,13 +39,15 @@ function Calculation() {
     document.getElementById('year').innerHTML =YearsInt + "  Years";  
     document.getElementById('Month').innerHTML =MonthsInt + "   Months";
     document.getElementById('days').innerHTML =DaysInt + "  Days"; 
-    document.getElementById('Summary').innerHTML ="This Feature ipothaiku vaipu illa!";
     document.getElementById('ResultTag').innerHTML = "Result";
     document.getElementById('1stcard').style.display = "none"
     document.getElementById('Ans').style.display = "block"
     document.getElementById('Invalid').style.display = "none";
     document.getElementById('info').style.display = "none";
     document.getElementById('NextBirth').innerHTML = Next_birthday();
+    document.getElementById('TotalDays').innerHTML = totalDays;
+    document.getElementById("TotalHours").innerHTML = TotalHours;
+    document.getElementById('TotalMins').innerHTML = TotalMins;
 
 
     }
@@ -50,7 +56,7 @@ function Calculation() {
     
 }   
 
-function on() {
+function Loading() {
     document.getElementById("overlay").style.display = "block";
     setTimeout(appeardiv,2300);
     function appeardiv() {
