@@ -1,6 +1,9 @@
 function Calculation() {
     var input = document.getElementById("Date").value;  
-    var userinput = new Date (input);
+    if (input==0){
+        document.getElementById('Invalid').style.display = "block";
+    }else {
+        var userinput = new Date (input);
     let formatted_date1 = (userinput.getMonth() + 1) + "/" + userinput.getDate() + "/" + userinput.getFullYear();  
     var DOB = new Date(formatted_date1);
 
@@ -19,16 +22,31 @@ function Calculation() {
     var Months = ( Years - YearsInt) * 12;
     var MonthsInt = Math.floor(Months);
 
-    var Days = (Months - MonthsInt) *365.242/12;
+    var Days = (Months - MonthsInt) *365.242/12 + 1;
     var DaysInt = Math.floor(Days)
 
    
     document.getElementById('year').innerHTML =YearsInt + "  Years";  
     document.getElementById('Month').innerHTML =MonthsInt + "   Months";
     document.getElementById('days').innerHTML =DaysInt + "  Days"; 
-    document.getElementById('Summary').innerHTML ="This Feature will be avilable on Next update!";
+    document.getElementById('Summary').innerHTML ="This Feature ipothaiku vaipu illa!";
+    document.getElementById('ResultTag').innerHTML = "Result";
+    document.getElementById('1stcard').style.display = "none"
+    document.getElementById('Ans').style.display = "block"
+    document.getElementById('Invalid').style.display = "none";
+    document.getElementById('info').style.display = "none";
 
- 
-}
 
+    }
+    
+   
+    
+}   
 
+function on() {
+    document.getElementById("overlay").style.display = "block";
+    setTimeout(appeardiv,2300);
+    function appeardiv() {
+              document.getElementById('overlay').style.display= "none";
+          }
+  }
