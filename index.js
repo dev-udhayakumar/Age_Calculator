@@ -1,9 +1,11 @@
 function Calculation() {
     var input = document.getElementById("Date").value;  
+    var name = document.getElementById("Name").value;
+
     if (input==0){
         document.getElementById('Invalid').style.display = "block";
-    }else {
-        var userinput = new Date (input);
+    }else {   
+    var userinput = new Date (input);
     let formatted_date1 = (userinput.getMonth() + 1) + "/" + userinput.getDate() + "/" + userinput.getFullYear();  
     var DOB = new Date(formatted_date1);
 
@@ -58,7 +60,7 @@ function Calculation() {
 
 function Loading() {
     document.getElementById("overlay").style.display = "block";
-    setTimeout(appeardiv,2300);
+    setTimeout(appeardiv,1500);
     function appeardiv() {
               document.getElementById('overlay').style.display= "none";
           }

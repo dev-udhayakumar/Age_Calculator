@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(39, 125, 206, 0.925);
+    background-color: rgba(58, 59, 59, 0.925);
     z-index: 2;
   }
   
@@ -16,7 +16,7 @@
     top: 50%;
     left: 50%;
     font-size: 50px;
-    color: white;
+    color: rgb(0, 0, 0);
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
   }
