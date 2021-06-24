@@ -46,6 +46,7 @@ function Calculation() {
     document.getElementById('Ans').style.display = "block"
     document.getElementById('Invalid').style.display = "none";
     document.getElementById('info').style.display = "none";
+    document.getElementById('h1').style.display = "none";
     document.getElementById('NextBirth').innerHTML = Next_birthday();
     document.getElementById('TotalDays').innerHTML = totalDays;
     document.getElementById("TotalHours").innerHTML = TotalHours;
@@ -60,7 +61,7 @@ function Calculation() {
 
 function Loading() {
     document.getElementById("overlay").style.display = "block";
-    setTimeout(appeardiv,1500);
+    setTimeout(appeardiv,1200);
     function appeardiv() {
               document.getElementById('overlay').style.display= "none";
           }
