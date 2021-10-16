@@ -1,6 +1,5 @@
 function Calculation() {
     var input = document.getElementById("Date").value;  
-    var name = document.getElementById("Name").value;
 
     if (input==0){
         document.getElementById('Invalid').style.display = "block";
@@ -45,7 +44,6 @@ function Calculation() {
     document.getElementById('1stcard').style.display = "none"
     document.getElementById('Ans').style.display = "block"
     document.getElementById('Invalid').style.display = "none";
-    document.getElementById('info').style.display = "none";
     document.getElementById('h1').style.display = "none";
     document.getElementById('NextBirth').innerHTML = Next_birthday();
     document.getElementById('TotalDays').innerHTML = totalDays;
