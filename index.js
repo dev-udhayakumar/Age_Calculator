@@ -41,10 +41,10 @@ function Calculation() {
     document.getElementById('Month').innerHTML =MonthsInt + "   Months";
     document.getElementById('days').innerHTML =DaysInt + "  Days"; 
     document.getElementById('ResultTag').innerHTML = "Result";
-    document.getElementById('1stcard').style.display = "none"
-    document.getElementById('Ans').style.display = "block"
     document.getElementById('Invalid').style.display = "none";
-    document.getElementById('h1').style.display = "none";
+    document.getElementById('year').style.display = "block";
+    document.getElementById('Month').style.display = "block";
+    document.getElementById('days').style.display = "block";
     document.getElementById('NextBirth').innerHTML = Next_birthday();
     document.getElementById('TotalDays').innerHTML = totalDays;
     document.getElementById("TotalHours").innerHTML = TotalHours;
@@ -59,7 +59,7 @@ function Calculation() {
 
 function Loading() {
     document.getElementById("overlay").style.display = "block";
-    setTimeout(appeardiv,1200);
+    setTimeout(appeardiv,1000);
     function appeardiv() {
               document.getElementById('overlay').style.display= "none";
           }
