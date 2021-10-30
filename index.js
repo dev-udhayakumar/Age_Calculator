@@ -36,15 +36,13 @@ function Calculation() {
         return Next_birthdayInt
         
     }
-
+    document.getElementById('ac-2').style.display = "block";
+    document.getElementById('ac-3').style.display = "block";
     document.getElementById('year').innerHTML =YearsInt + "  Years";  
     document.getElementById('Month').innerHTML =MonthsInt + "   Months";
     document.getElementById('days').innerHTML =DaysInt + "  Days"; 
     document.getElementById('ResultTag').innerHTML = "Result";
     document.getElementById('Invalid').style.display = "none";
-    document.getElementById('year').style.display = "block";
-    document.getElementById('Month').style.display = "block";
-    document.getElementById('days').style.display = "block";
     document.getElementById('NextBirth').innerHTML = Next_birthday();
     document.getElementById('TotalDays').innerHTML = totalDays;
     document.getElementById("TotalHours").innerHTML = TotalHours;
