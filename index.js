@@ -54,6 +54,9 @@ function Calculation() {
    
     
 }   
+function Clear(){
+    location.reload()
+}
 
 function Loading() {
     document.getElementById("overlay").style.display = "block";

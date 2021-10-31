@@ -12,7 +12,6 @@
 </head>
 <body style="background: rgb(254, 254, 255);">
   <div class="container">
-    
     <div class="row align-items-center  p-3" id="1stcard">
       <div class="col-lg-6 p-3 align-items-center">
         <div class="col">
@@ -30,9 +29,16 @@
               </svg>  Invalid Name or Date!
             </label>
           </div>
-          <div class="col">
-            <div class="d-grid gap-2">
-              <button class="btn btn-primary" onclick="Calculation() , Loading() " ><b>Submit</b></button>
+          <div class="row">
+            <div class="col">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-secondary" onclick="Clear()" >clear</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" onclick="Calculation() , Loading() " >Submit</button>
+              </div>
             </div>
           </div>
         </div>
